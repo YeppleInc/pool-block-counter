@@ -3,6 +3,10 @@ A Python script that can be placed on a Cardano Block Producer node to extract b
 
 # Installation
 Clone the repo to your git directory:
+git clone https://github.com/YeppleInc/pool-block-counter
+
+Give permissions for the file block_count.sh to run:
+chmod 755 block_count.sh
 
 Crontab 
 

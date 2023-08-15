@@ -21,7 +21,7 @@ Add:<br>
 
 5) Edit block_count.py and replace the pool ticker and pool ID (lines 149-150) with your pools information.
 
-7) That's it! The script will now run every 2 minutes and write the epoch block count information as a json file to the /data/ directory. See sample below.
+That's it! The script will now run every 2 minutes and write the epoch block count information as a json file to the /data/ directory. See sample below.
 
 ### Optional API Config 
 If you would like to send the json information to an API endpoint, then:<br>

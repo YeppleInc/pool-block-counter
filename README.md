@@ -26,10 +26,10 @@ That's it! The script will now run every 2 minutes and write the epoch block cou
 ### Optional API Config 
 If you would like to send the json information to an API endpoint, then:<br>
 
-7) Enable API:
+6) Enable API:
    
 >Replace line 138, "use_api = False" with "use_api = True"
-8) Create a file called ".env" in the same directory and define the API endpoint URL and secret key:
+7) Create a file called ".env" in the same directory and define the API endpoint URL and secret key:
 >#.env<br>
 >url=https://client-api.yepple.io/v1/apps/stakepools/epoch/set<br>
 >secret=[secret_key]<br>

@@ -3,21 +3,25 @@ A Python script that can be placed on a Cardano Block Producer node to extract b
 
 ## Installation
 1) Clone the repo to your git directory:
->git clone https://github.com/YeppleInc/pool-block-counter
-
+```console
+git clone https://github.com/YeppleInc/pool-block-counter
+```
 2) Give permissions for the file block_count.sh to run:
->chmod 755 block_count.sh
-
+```console
+chmod 755 block_count.sh
+```
 3) Edit block_count.sh and ensure the path is correct (you may need to change the username from 'admin' to whatever user you are logged in as).
 
 4) Create a crontab job to run this script every 2 minutes:
->crontab -e<br>
+```console
+crontab -e<br>
+```
+Add:<br>
 >*/2 * * * * /home/admin/git/pool-block-counter/block_count.sh 
 
-5) Edit block_count.py:
->Replace the pool ticker and pool ID (lines 149-150) with your pools information.
+5) Edit block_count.py and replace the pool ticker and pool ID (lines 149-150) with your pools information.
 
-6) That's it! The script will now run every 2 minutes and write the epoch block count information as a json file to the /data/ directory. See sample below.
+7) That's it! The script will now run every 2 minutes and write the epoch block count information as a json file to the /data/ directory. See sample below.
 
 ### Optional API Config 
 If you would like to send the json information to an API endpoint, then:<br>

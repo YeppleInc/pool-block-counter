@@ -14,7 +14,7 @@ chmod 755 block_count.sh
 
 4) Create a crontab job to run this script every 2 minutes:
 ```console
-crontab -e<br>
+crontab -e
 ```
 Add:<br>
 >*/2 * * * * /home/admin/git/pool-block-counter/block_count.sh 

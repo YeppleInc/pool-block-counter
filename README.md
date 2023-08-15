@@ -19,21 +19,15 @@ crontab -e
 Add:<br>
 >*/2 * * * * /home/admin/git/pool-block-counter/block_count.sh 
 
-5) Edit block_count.py and replace the pool ticker and pool ID (lines 149-150) with your pools information.
+5) Edit .env file and replace the pool ticker and pool ID with your pools information.
 
 That's it! The script will now run every 2 minutes and write the epoch block count information as a json file to the /data/ directory. See sample below.
 
 ### Optional API Config 
 If you would like to send the json information to an API endpoint, then:<br>
 
-6) Enable API:
+6) Edit the .env file and include details about your API endpoint URL, as well as secret key and header if required.
    
->Replace line 138, "use_api = False" with "use_api = True"
-7) Create a file called ".env" in the same directory and define the API endpoint URL and secret key:
->#.env<br>
->url=https://client-api.yepple.io/v1/apps/stakepools/epoch/set<br>
->secret=[secret_key]<br>
-
 ## Sample Output
 ```
 {

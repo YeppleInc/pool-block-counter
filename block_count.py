@@ -143,6 +143,16 @@ if __name__ == '__main__':
         secret = os.getenv('block_count_api_key')
         headers = os.getenv('block_count_api_header')
         use_api=True
+
+    if headers == "":
+        headers = {
+            'Content-Type': 'application/json',
+        }
+    else:
+        headers = {
+            'Content-Type': 'application/json',
+            headers: secret
+        }
         
     ## File path definitions
     db_path = "/opt/cardano/cnode/guild-db/blocklog/blocklog.db"

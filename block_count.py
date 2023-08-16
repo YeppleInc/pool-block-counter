@@ -134,7 +134,6 @@ def createtemp(epoch,file):
 if __name__ == '__main__':
 
     ## API Details
-    # Change to True if using an API endpoint
     use_api = False
     load_dotenv()
     ticker=os.getenv('block_count_ticker')

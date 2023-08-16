@@ -137,18 +137,14 @@ if __name__ == '__main__':
     # Change to True if using an API endpoint
     use_api = False
     load_dotenv()
-    url = os.getenv('url')
-    secret = os.getenv('secret')
-
-    headers = {
-        'Content-Type': 'application/json',
-        'yepple-access-key': secret
-    }
-
-    ## Pool Details
-    ticker="YEPPL"
-    poolID = "pool1m3h5p82m6v99nda37rmed8vrkqt43e2a8d89k76gw5ets0gdyag"
-
+    ticker=os.getenv('block_count_ticker')
+    poolID=os.getenv('block_count_id')
+    if os.getenv('block_count_api') != "":
+        url = os.getenv('block_count_api')
+        secret = os.getenv('block_count_api_key')
+        headers = os.getenv('block_count_api_header')
+        use_api=True
+        
     ## File path definitions
     db_path = "/opt/cardano/cnode/guild-db/blocklog/blocklog.db"
     filepath = "./data/"

@@ -1,5 +1,5 @@
 # pool-block-counter
-A Python script that can be placed on a Cardano Block Producer node to extract block data (scheduled/minted/missed/etc) and writes updates to a file  and/or submits them to an API endpoint.
+A Python script that can be placed on a Cardano Block Producer node to extract block data (scheduled/minted/missed/etc) and writes updates to a file  and/or submits them to an API endpoint. This script requires a fully synced guild-db blocklog file to function.  
 
 ## Installation
 1) Clone the repo to your git directory:

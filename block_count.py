@@ -214,7 +214,7 @@ if __name__ == '__main__':
                print(f"API call failed with status code: {response.status_code}")
                print("Error message:")
                print(response.text)
-               os.remove(currenttmppath)
+               os.remove(nexttmppath)
         else:
             os.rename(nexttmppath,nextjsonpath)
             print("Next: Changes written")
